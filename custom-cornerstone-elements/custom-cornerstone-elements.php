@@ -20,23 +20,54 @@ https://community.theme.co/kb/cornerstone-custom-elements/
  
 define( 'EXTENSION_PATH', plugin_dir_path( __FILE__ ) );
 define( 'EXTENSION_URL', plugin_dir_url( __FILE__ ) );
+define( 'ELEMENTS_URL', EXTENSION_URL . '/assets/includes/' );
+
 add_action( 'wp_enqueue_scripts', 'si_custom_elements_enqueue' );
 add_action( 'cornerstone_register_elements', 'si_custom_elements_register_elements' );
 add_filter( 'cornerstone_icon_map', 'si_custom_elements_icon_map' );
 
+/* 
+	@params is the name of the element
+	 namespace needs to match the folder name inside /includes/
+*/
+$elements = array(
+	'SI_Feature_Box'	=> array(
+		'namespace'		=> 'si-feature-box',
+		'directory'		=> 'si-feature-box',
+	),
+	'SI_Extended_Accordion'	=> array(
+		'namespace'		=> 'si-extended-accordion',
+		'directory'		=> 'si-extended-accordion',
+	),
+	'SI_Extended_Accordion_Item'	=> array(
+		'namespace'		=> 'si-extended-accordion-item',
+		'directory'		=> 'si-extended-accordion/si-extended-accordion-item',
+	)
+);
+
 /* Register Elements */
 function si_custom_elements_register_elements() {
-	cornerstone_register_element( 'SI_Feature_Box', 'si-feature-box', EXTENSION_PATH . 'includes/si-feature-box' );
-	cornerstone_register_element( 'SI_Extended_Accordion', 'si-extended-accordion', EXTENSION_PATH . 'includes/si-extended-accordion' );
-	cornerstone_register_element( 'SI_Extended_Accordion_Item', 'si-extended-accordion-item', EXTENSION_PATH . 'includes/si-extended-accordion/si-extended-accordion-item' );
+	global $elements;
+	foreach ($elements as $key => $value) {
+		$title = $key;
+		$namespace = $value['namespace'];
+		$directory = $value['directory'];
+
+		cornerstone_register_element( $title, $namespace, EXTENSION_PATH . 'includes/' . $directory );
+	}
 }
 
-/* 
-	Todo: Should we be enqueueing individual CSS files for each element?
-	The issue here is that the css is only updated if I re-install the plugin completely. Not cool :( 
-*/
 function si_custom_elements_enqueue() {
-	wp_enqueue_style( 'si_custom_elements-styles', EXTENSION_URL . '/assets/styles/si_custom_elements.css', array(), '0.1.0' );
+	global $elements;
+	foreach ($elements as $key => $value) {
+		$title = $key;
+		$namespace = $value['namespace'];
+		$directory = $value['directory'];
+		
+		// @ToDo: Should we first check if the style file exists?
+		// @ToDo: In development, will these styles be refreshed each time the css file is updated?
+		wp_enqueue_style( $namespace . '-styles', EXTENSION_URL . '/includes/' . $directory . '/styles/element.css', array(), '0.1.0' );
+	}
 }
 
 /* Mapping of SVG icon so when you're searching in CS Elements, it has a nice graphic. */
