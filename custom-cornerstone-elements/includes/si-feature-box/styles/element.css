@@ -1,0 +1,12 @@
+.si-feature-box {
+	margin: 0 auto 1.313em;
+}
+.si-feature-box-header .si-feature-box-heading{
+	display: inline-block;
+	margin: 0;
+}
+
+.si-feature-box-header .si-feature-box-icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
