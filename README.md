@@ -1,7 +1,11 @@
 # Custom Cornerstone Elements
-A Wordpress Plugin that registers new custom elements for Cornerstone editor
+A Wordpress Plugin that registers new custom elements for Cornerstone editor.
 
-This is a work in progress by me, and also my first Open Source project :)  Big thanks to the team at X Theme Users (http://xthemeusers.com) for support. Please comment / PR as you like :)
+This is a work in progress by me, and also my first Open Source project, so please give feedback!
+
+I decided to Open Source this because I noticed there's not much of a clear guideline from Themeco about how to create custom elements. Hoping that sharing my examples might help to get a clearer picture, and maybe we can write some documentation around it later too. 
+
+Big thanks to the team at X Theme Users (http://xthemeusers.com) for support. Please comment / PR as you like :)
 
 Built from examples given in:
 https://community.theme.co/kb/cornerstone-introduction/
