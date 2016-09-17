@@ -2,16 +2,3 @@
  NOTE: This file only gets updated if you completely re-install the plugin.
  Need to figure out a better place for individual styles
  */
-
-.si-feature-box {
-	margin: 0 auto 1.313em;
-}
-.si-feature-box-header .si-feature-box-heading{
-	display: inline-block;
-	margin: 0;
-}
-
-.si-feature-box-header .si-feature-box-icon {
-    margin-right: 5px;
-    font-size: 20px;
-}

@@ -1,0 +1,39 @@
+.si-extended-accordion-heading .x-accordion-toggle {
+    position: relative;
+    font-family: inherit;
+}
+.si-extended-accordion-heading.si-extended-accordion-heading .x-accordion-toggle:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+.si-extended-accordion-heading .x-accordion-toggle:not(.collapsed) {
+    background-color: #f3f3f3;
+}
+.si-extended-accordion-heading .x-accordion-toggle:before {
+    position: absolute;
+    content: "\f107";
+    right: 5px;
+    top: 10px;
+    bottom: auto;
+    font-size: 1em;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.si-extended-accordion-row {
+    display: inline-block;
+    width: calc(100% - 20px);
+}
+.si-extended-accordion-row:empty {
+    width: auto;
+}
+.si-extended-accordion-type,
+.si-extended-accordion-subtitle {
+    font-size: .8em;
+    font-style: italic;
+    color: #999;
+}
+.si-extended-accordion-location,
+.si-extended-accordion-type {
+    float: right;
+}

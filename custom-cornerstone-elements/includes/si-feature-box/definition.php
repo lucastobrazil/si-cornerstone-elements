@@ -9,9 +9,10 @@
  */
 
 class SI_Feature_Box {
-	public
-
-	function ui() {
+	
+	
+	public function ui() {
+		
 		return array(
 			'title' => __('SI Feature Box', 'si-feature-box') ,
 			'autofocus' => array(
