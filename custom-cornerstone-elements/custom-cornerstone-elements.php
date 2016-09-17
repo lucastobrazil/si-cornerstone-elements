@@ -4,6 +4,7 @@
 Plugin Name: Custom Cornerstone Elements
 Plugin URI:
 Description: A Wordpress Plugin that registers new custom elements for Cornerstone editor
+Elements included: Extended Accordion, Feature Box
 Author: lucastobrazil
 Author URI: http://lucastobrazil.github.io/
 Version: 0.1.0
