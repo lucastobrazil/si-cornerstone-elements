@@ -20,7 +20,7 @@ https://community.theme.co/kb/cornerstone-custom-elements/
  
 define( 'EXTENSION_PATH', plugin_dir_path( __FILE__ ) );
 define( 'EXTENSION_URL', plugin_dir_url( __FILE__ ) );
-define( 'ELEMENTS_URL', EXTENSION_URL . '/assets/includes/' );
+define( 'ELEMENTS_URL', EXTENSION_URL . '/includes/' );
 
 add_action( 'wp_enqueue_scripts', 'si_custom_elements_enqueue' );
 add_action( 'cornerstone_register_elements', 'si_custom_elements_register_elements' );
@@ -63,10 +63,18 @@ function si_custom_elements_enqueue() {
 		$title = $key;
 		$namespace = $value['namespace'];
 		$directory = $value['directory'];
+
+		$cssFilePath = EXTENSION_PATH . 'includes/' . $directory . '/styles/element.css';
+		$cssFileUrl = EXTENSION_URL . 'includes/' . $directory . '/styles/element.css';
+		$jsFilePath = EXTENSION_PATH . 'includes/' . $directory . '/scripts/element.js';
+		$jsFileUrl = EXTENSION_URL . 'includes/' . $directory . '/scripts/element.js';
 		
-		// @ToDo: Should we first check if the style file exists?
-		// @ToDo: In development, will these styles be refreshed each time the css file is updated?
-		wp_enqueue_style( $namespace . '-styles', EXTENSION_URL . '/includes/' . $directory . '/styles/element.css', array(), '0.1.0' );
+		if(file_exists($cssFilePath)) {
+			wp_enqueue_style( $namespace . '-style', $cssFileUrl, array(), '0.1.0' );	
+		}
+		if(file_exists($jsFilePath)) {
+			wp_enqueue_script( $namespace . '-script', $jsFileUrl, array(), '0.1.0' );
+		}
 	}
 }
 
