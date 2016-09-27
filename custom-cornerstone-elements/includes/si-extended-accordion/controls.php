@@ -7,7 +7,6 @@
 return array(
 	'elements' => array(
 		'type'    => 'sortable',
-        'context' => 'content',
         'ui' => array(
 			'title'   => __( 'Add Items', 'si-custom-elements' ),
 			'tooltip' =>__( 'Add a new item to your accordion..', 'si-custom-elements' ),
@@ -33,7 +32,6 @@ return array(
 	),
     'link_items' => array(
 		'type'    => 'toggle',
-        'context' => 'link_items',
         'ui' => array(
 			'title'   => __( 'Link Items', 'si-custom-elements' ),
 			'tooltip' =>__( 'This will make opening one item close the others.', 'si-custom-elements' ),

@@ -12,14 +12,12 @@ return array(
 			'title'   => __( 'Heading &amp; Content', 'si-custom-elements' ),
 			'tooltip' => __( 'Tooltip to describe your controls.', 'si-custom-elements' ),
 		),
-		'context' => 'content',
     	'suggest' => __( 'Heading', 'si-custom-elements' ),
 	),
 	// Important: in order to display HTML output, this needs to be called 'content'. 
 	// Something to do with the way WP shortcodes output $content
 	'content' => array(
 		'type'    => 'textarea',
-		'context' => 'content',
 		'ui' => array(
 			'title'   => __( 'Heading &amp; Content', 'si-custom-elements' ),
 		),
@@ -48,7 +46,6 @@ return array(
 			'title'   => __( 'Icon', 'cornerstone' ),
 			'tooltip' => __( 'Specify the icon you would like to use.', 'cornerstone' ),
 		),
-		'context' => 'content',
     	'suggest' => 'lightbulb-o',
 	),
 

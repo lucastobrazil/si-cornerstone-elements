@@ -7,7 +7,6 @@
 return array(
 	'title' => array(
 		'type'    => 'text',
-        'context' => 'title',
         'ui' => array(
 			'title'   => __( 'Item Title', 'si-custom-elements' ),
 			'tooltip' =>__( 'Include your desired title for your Accordion Item here.', 'si-custom-elements' ),
@@ -15,7 +14,6 @@ return array(
 	),
     'sub_title' => array(
 		'type'    => 'text',
-        'context' => 'sub_title',
         'ui' => array(
 			'title'   => __( 'Subtitle', 'si-custom-elements' ),
 			'tooltip' =>__( 'Include extra info here.', 'si-custom-elements' ),
@@ -24,7 +22,6 @@ return array(
 
     'job_location' => array(
 		'type'    => 'text',
-        'context' => 'job_location',
         'ui' => array(
 			'title'   => __( 'Job Location', 'si-custom-elements' ),
 			'tooltip' =>__( 'eg. Berlin, U.S. etc.', 'si-custom-elements' ),
@@ -33,7 +30,6 @@ return array(
 
     'job_type' => array(
 		'type'    => 'text',
-        'context' => 'job_type',
         'ui' => array(
 			'title'   => __( 'Job Type', 'si-custom-elements' ),
 			'tooltip' =>__( 'eg. Full Time, Home Office, etc.', 'si-custom-elements' ),
@@ -41,7 +37,6 @@ return array(
 	),
     'content' => array(
         'type'    => 'editor',
-        'context' => 'content',
         'ui' => array(
 			'title'   => __( 'Content', 'si-custom-elements' ),
 			'tooltip' =>__( 'Include your desired content for your Accordion Item here.', 'si-custom-elements' ),
