@@ -34,6 +34,10 @@ function loadCustomElements() {
 		'SI_Extended_Accordion_Item'	=> array(
 			'name'		=> 'si-extended-accordion-item',
 			'directory'		=> 'si-extended-accordion/si-extended-accordion-item',
+		),
+		'SI_Image_Rollover'	=> array(
+			'name'		=> 'si-image-rollover',
+			'directory'		=> 'si-image-rollover',
 		)
 	);
 

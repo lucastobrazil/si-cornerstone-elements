@@ -14,8 +14,6 @@ return array(
 		),
     	'suggest' => __( 'Heading', 'si-custom-elements' ),
 	),
-	// Important: in order to display HTML output, this needs to be called 'content'. 
-	// Something to do with the way WP shortcodes output $content
 	'content' => array(
 		'type'    => 'textarea',
 		'ui' => array(
