@@ -16,6 +16,7 @@ return array(
             'newTitle' => __( 'Item %s', 'si-custom-elements' ),
             'floor'    => 1
         ),
+        'context' => 'content',
         'suggest' => array(
             array( 
                 'title' => __( 'SI Accordion Item 1', 'si-custom-elements' ),
