@@ -28,4 +28,28 @@ return array(
             )
 		),
 	),
+	'size' => array(
+		'type'    => 'select',
+		'ui' => array(
+			'title'   => __( 'Graphic Size', 'si-custom-elements' ),
+		),
+		'options' => array(
+			'choices' => array(
+				array( 'value' => '',   'label' => __( 'Normal (260px)', 'si-custom-elements' ) ),
+				array( 'value' => 'feature-img--small',   'label' => __( 'Small (130px)', 'si-custom-elements' ) ),
+			)
+		)
+	),
+	'border_toggle' => array(
+		'type'    => 'toggle',
+        'ui' => array(
+			'title'   => __( 'Border', 'si-custom-elements' ),
+		)
+	),
+	'circular' => array(
+		'type'    => 'toggle',
+        'ui' => array(
+			'title'   => __( 'Circular', 'si-custom-elements' ),
+		)
+	),
 );

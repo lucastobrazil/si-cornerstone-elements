@@ -1,7 +1,15 @@
 <?php
-// $output = "<a href='{$link}'>{$my_title}</a>";
-// echo $output;
-$class     = ( $class     != ''     ) ? 'feature-img ' . esc_attr( $class ) : 'feature-img';
+$borderClass = ( true === $border_toggle ) ? 'feature-img--bordered' : '';
+$shapeClass = ( true === $circular ) ? 'feature-img--circular' : '';
+
+$class = implode(' ', [
+    'feature-img',
+    esc_attr( $class ),
+    $size,
+    $borderClass,
+    $shapeClass
+]);
+
 $containerAtts = cs_atts( array(
 	'id' => $id,
 	'class' => $class,

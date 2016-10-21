@@ -11,4 +11,7 @@ return array(
 	'text_title'	=> '',
 	'content'	=> '',
 	'graphic'	=> '',
+	'size'	=> '',
+	'border_toggle'	=> true,
+	'circular'	=> true,
 );
