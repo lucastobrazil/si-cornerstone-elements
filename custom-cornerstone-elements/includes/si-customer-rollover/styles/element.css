@@ -1,0 +1,126 @@
+.si-customer-rollover {
+  padding: 10px;
+}
+.si-customer-rollover .logo {
+  position: relative;
+  display: block;
+  /*width: 238px;*/
+  width: 100%;
+  height: 170px;
+  /*margin: 10px;*/
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-size: 13px;
+}
+.si-customer-rollover .logo.more-info {
+  cursor: pointer;
+}
+.si-customer-rollover .logo.more-info:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -65px;
+  left: -65px;
+  background: #888;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+  z-index: 4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.si-customer-rollover .logo.more-info:before {
+  color: white;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: 5;
+  content: "\F0F6";
+  display: inline-block;
+  font-family: 'FontAwesome' !important;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.si-customer-rollover .logo.more-info:hover {
+  background: #f7f7f7;
+}
+.si-customer-rollover .logo .hoverInfo,
+.si-customer-rollover .logo .logoBox {
+  transition: all .3s;
+}
+.si-customer-rollover .logo:hover .logoBox {
+  height: 50%;
+  width: 50%;
+  padding: 20px;
+}
+.si-customer-rollover .logo:hover .hoverInfo.blurb {
+  height: 50%;
+  border-top: dashed #d9dee1 1px;
+}
+.si-customer-rollover .logo:hover .hoverInfo.insight {
+  width: 50%;
+}
+.si-customer-rollover .logo:hover .hoverInfo .item-link {
+  color: #4495d8;
+}
+.si-customer-rollover .logo:hover .hoverInfo .item-link:hover {
+  text-decoration: underline;
+}
+.si-customer-rollover .logo .logoBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.si-customer-rollover .logo .logoBox > div {
+  width: 100%;
+  max-width: 238px;
+  margin: 0 auto;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.si-customer-rollover .logo .hoverInfo {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  bottom: 0;
+  text-align: center;
+  color: #828282;
+  font-style: italic;
+  border-top: dashed transparent 1px;
+}
+.si-customer-rollover .logo .hoverInfo.blurb {
+  width: 100%;
+  padding: 0 10px;
+  line-height: 1.1;
+}
+.si-customer-rollover .logo .hoverInfo.insight {
+  padding: 0px;
+  top: 0;
+  bottom: auto;
+  right: 0;
+  width: 0;
+  height: 50%;
+  text-align: left;
+}
+.si-customer-rollover .logo .hoverInfo.insight > div {
+  width: 400px;
+}
+.si-customer-rollover .logo .hoverInfo .miniquote {
+  font-weight: 700 !important;
+  margin-bottom: 5px;
+}
+.si-customer-rollover .logo .hoverInfo > div {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+.si-customer-rollover .logo .hoverInfo > div > div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}

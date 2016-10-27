@@ -38,6 +38,10 @@ function loadCustomElements() {
 		'SI_Image_Rollover'	=> array(
 			'name'		=> 'si-image-rollover',
 			'directory'		=> 'si-image-rollover',
+		),
+		'SI_Customer_Rollover'	=> array(
+			'name'		=> 'si-customer-rollover',
+			'directory'		=> 'si-customer-rollover',
 		)
 	);
 
