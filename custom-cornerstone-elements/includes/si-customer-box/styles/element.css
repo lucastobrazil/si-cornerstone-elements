@@ -1,0 +1,78 @@
+.si-customer-box{
+  padding:20px;
+  position:relative;
+  background:rgba(255,255,255,.9);
+  border-radius:3px;
+  border:1px solid #ddd;
+  transition:1s background;
+  margin-bottom:40px;
+}
+
+.si-customer-box:hover{
+  background:#fff;
+}
+
+.si-customer-box .overlay-link{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+
+.si-customer-box .left {
+  width:35%;
+}
+
+.si-customer-box .right{
+  text-align:center;
+  width:65%;
+  padding-left:20px;
+  position:relative;
+}
+
+.si-customer-box .customer-box-quote{
+  font-style:italic;
+  margin:0 0 8px;
+}
+
+.si-customer-box .customer-box-logo img{
+  height:40px;
+  margin-top:10px;
+}
+
+.si-customer-box .customer-box-quote,
+.si-customer-box .customer-box-name,
+.si-customer-box .customer-box-position{
+  transition: .2s all;
+}
+
+
+.si-customer-box:hover .customer-box-quote,
+.si-customer-box:hover .customer-box-name,
+.si-customer-box:hover .customer-box-position{
+  opacity:0;
+}
+
+.si-customer-box .customer-box-link{
+  position:absolute;
+  top:0;
+  left:0;
+  padding:50px 0;
+  width:100%;
+  transition:.2s all;
+  transform:scale(1.1);
+  opacity:0;
+  text-indent:20px;
+  margin:0;
+}
+
+.si-customer-box:hover .customer-box-link{
+  opacity:1;
+  transform:scale(1);
+}
+
+.si-customer-box .customer-box-portrait img{
+  border:1px solid #dedede;
+}

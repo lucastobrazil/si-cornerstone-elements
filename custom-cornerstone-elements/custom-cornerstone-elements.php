@@ -42,6 +42,22 @@ function loadCustomElements() {
 		'SI_Customer_Rollover'	=> array(
 			'name'		=> 'si-customer-rollover',
 			'directory'		=> 'si-customer-rollover',
+		),
+		'SI_Vimeo_Video'	=> array(
+			'name'		=> 'si-vimeo-video',
+			'directory'		=> 'si-vimeo-video',
+		),
+		'SI_Lightbox_Image'	=> array(
+			'name'		=> 'si-lightbox-image',
+			'directory'		=> 'si-lightbox-image',
+		),
+		'SI_RSS_Reader'	=> array(
+			'name'		=> 'si-rss-reader',
+			'directory'		=> 'si-rss-reader',
+		),
+		'SI_Customer_Box'	=> array(
+			'name'		=> 'si-customer-box',
+			'directory'		=> 'si-customer-box',
 		)
 	);
 

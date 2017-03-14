@@ -1,0 +1,90 @@
+.si-vimeo-video {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+  margin-bottom:2.313em;
+}
+
+.si-vimeo-video .video-link{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align:center;
+}
+
+.si-vimeo-video .video-link .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #34495e;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  transition: opacity .25s;
+}
+
+.si-vimeo-video .video-link:hover .overlay{
+  opacity:.4;
+}
+
+.si-vimeo-video .video-link .time{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: rgba(40,87,150,.8);
+  transition: all .4s;
+  opacity:0;
+  font-size:15px;
+  line-height:1;
+  color:#fff;
+}
+
+.si-vimeo-video .video-link:hover .time{
+  opacity:1;
+}
+
+.si-vimeo-video .video-link .play-button{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: rgba(50,50,50,.1);
+  box-shadow: 0 0 3px rgba(0,0,0,.1);
+  border: 10px solid #fff;
+  border-radius: 100%;
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  text-decoration: none;
+}
+
+.si-vimeo-video .video-link .play-button i{
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  line-height: 80px;
+  margin-left: 4px;
+}
+
+.si-vimeo-video .content-info{
+  padding:15px;
+  text-align:center;
+  min-height:165px;
+}
+
+.si-vimeo-video.has-description .video-link{
+  max-height:200px;
+  overflow:hidden;
+}
+
+.si-vimeo-video.has-description .video-link img{
+  width:100%;
+}
