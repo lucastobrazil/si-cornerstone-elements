@@ -1,15 +1,17 @@
 .si-customer-box{
   padding:20px;
   position:relative;
-  background:rgba(255,255,255,.9);
+  background:white;
   border-radius:3px;
   border:1px solid #ddd;
-  transition:1s background;
+  transition: 450ms transform ease, 450ms box-shadow ease;
   margin-bottom:40px;
 }
 
 .si-customer-box:hover{
   background:#fff;
+  transform: scale(1.02);
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.45);
 }
 
 .si-customer-box .overlay-link{
