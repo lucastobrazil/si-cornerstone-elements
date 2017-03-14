@@ -1,9 +1,15 @@
-# Custom Cornerstone Elements
-A Wordpress Plugin that registers new custom elements for Cornerstone editor. Also includes some example custom elements:
+# SI Cornerstone Elements
+Custom Cornerstone Elements for the company Small Improvements
 
 # Elements Included:
 - Extended Accordion (standard accordion with some extra fields included in the header)
 - Feature Box (Same as the Feature Box but with custom markup used instead of shortcode)
+- Image Rollover
+- Customer Rollover
+- Vimeo Video
+- Lightbox Image
+- RSS REader
+- Customer Box
 
 This is a work in progress by me, and also my first Open Source project, so please give feedback!
 
