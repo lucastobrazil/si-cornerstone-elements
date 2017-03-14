@@ -85,7 +85,7 @@ function loadCustomElements() {
 			$jsFileUrl = EXTENSION_URL . 'includes/' . $directory . '/scripts/element.js';
 			
 			if(file_exists($cssFilePath)) {
-				wp_enqueue_style( $name . '-style', $cssFileUrl, array(), '0.1.0' );	
+				wp_enqueue_style( $name . '-style', $cssFileUrl, array(), '0.1.1' );	
 			}
 			if(file_exists($jsFilePath)) {
 				wp_enqueue_script( $name . '-script', $jsFileUrl, array(), '0.1.0' );
